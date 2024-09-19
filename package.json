@@ -9,7 +9,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "node api.js && tsc",
     "clean": "rm -rf dist",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=\\.test\\.ts$ --testPathIgnorePatterns=\\.int\\.test\\.ts$",
     "test:int": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=\\.int\\.test\\.ts$",
@@ -19,7 +19,7 @@
   "dependencies": {
     "@langchain/anthropic": "^0.3.1",
     "@langchain/community": "^0.3.1",
-    "@langchain/core": "^0.3.2",
+    "@langchain/core": "^0.3.3",
     "@langchain/langgraph": "^0.2.8",
     "langchain": "^0.3.2"
   },
